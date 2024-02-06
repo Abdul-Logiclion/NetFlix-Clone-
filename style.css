@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+
+    background-color: black;
+}
+
+.main{
+  
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 544px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    margin-bottom: 1000px;
+    
+}
+nav{
+max-width: 60vw;
+justify-content: space-between;
+margin: auto;
+display: flex;
+align-items: center;
+height: 100px;
+}
+
+nav svg {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+
+.btn>:nth-last-child(1)
+{
+    background-color:red;
+    padding:5px 20px;
+    color:white;
+    border: 2px solid white;
+    border-radius: 7px;
+
+}
+
+
+.btn>:nth-last-child(2)
+{
+    background-color:black;
+    padding:5px 20px;
+    margin: 5px;
+    color:white;
+    border:2px solid white;
+    border-radius: 7px;
+
+
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero span p{
+    font-size: 30px;
+}
+
+.separation{
+    background-color: grey;
+    height: 7px;
+}
