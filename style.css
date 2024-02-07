@@ -198,3 +198,75 @@ nav svg {
 
 }
 
+.fifth{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+
+.fifth .box{
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.box .box1{
+    width: 70vw;
+    margin: auto;
+    height: 80px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    font-size: 24px;
+    font-weight: 400;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h2{
+
+    color: white;
+}
+
+.again{
+
+    position: relative;
+    z-index: 10;
+    padding: 100px;
+
+
+}
+
+.again,.btn input{
+    font-weight: bold;
+}
+
+.sixth{
+
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sixth .grid{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  gap: 10px; 
+
+}
+
+.grid,.sixth a{
+  color: bisque;
+}
