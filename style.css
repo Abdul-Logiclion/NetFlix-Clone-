@@ -95,4 +95,106 @@ nav svg {
 .separation{
     background-color: grey;
     height: 7px;
+    position: relative;
+    z-index: 10;
 }
+
+.first .secText{
+    color: white;
+    align-content: center;
+    padding: 10px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+
+    padding-left: 0;
+    margin-left: 0;
+    gap: 30px;
+
+}
+
+.secVideo {
+    display: flex;
+    position: absolute;
+    margin-left: 505px;
+    height: 78vh;
+}
+ 
+
+
+.secVideo video{
+    margin-left: 60px;
+    width: 285px;
+    margin-bottom: 18px;
+
+}
+.secImg
+{
+    margin-left: 148px;
+    margin-right: 190px;
+}
+
+.secImg img{
+    width:400px;
+    position:relative;
+    z-index:10;
+
+}
+.first :first-child{
+  
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+
+.first :nth-child(2){
+  font-size: 22px;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+ 
+
+}
+
+.third{
+
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third .secText{
+    width:40vw;
+    
+
+}
+.fourth{
+
+    height: 80vh;
+    padding-left: 250px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fourth .secText{
+    width:30vw;
+
+}
+
+.third .secImg
+{
+    margin-right: 79px 
+}
+.third .secText:nth-child(2){
+    font-size: 32px;
+
+}
+
