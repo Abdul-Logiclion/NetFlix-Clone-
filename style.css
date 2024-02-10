@@ -10,21 +10,20 @@
 body{
 
     background-color: black;
+   
 }
 
-.main{
-  
+.main {
     background-image: url("assets/images/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 544px;
+    height: 644px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    z-index: 10;
+    overflow-x: hidden;
 }
- 
+
 .main .box {
     height: 644px;
     width: 100%;
@@ -32,25 +31,23 @@ body{
     position: absolute;
     top: 0;
     background-color: black;
-    margin-bottom: 1000px;
-    
 }
-nav{
-max-width: 60vw;
-justify-content: space-between;
-margin: auto;
-display: flex;
-align-items: center;
-height: 100px;
+
+nav {
+    max-width: 60vw;
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
 }
 
 nav svg {
     color: red;
     width: 130px;
     position: relative;
-    z-index: 10;
+    z-index: 1000;
 }
-
 
 .btn>:nth-last-child(1)
 {
@@ -61,7 +58,6 @@ nav svg {
     border-radius: 7px;
 
 }
-
 
 .btn>:nth-last-child(2)
 {
@@ -84,13 +80,15 @@ nav svg {
     flex-direction: column;
     color: white;
     position: relative;
+    z-index: 10;
     gap: 23px;
-    padding: 0 30px;
+  
 }
 
 .hero span p{
     font-size: 30px;
 }
+
 
 .separation{
     background-color: grey;
@@ -102,17 +100,14 @@ nav svg {
 .first .secText{
     color: white;
     align-content: center;
-    padding: 10px;
-    margin-left: 20px;
+   
+   
     flex-wrap: wrap;
     position: relative;
     z-index: 10;
     display: flex;
     flex-direction: column;
     width: 95vw;
-
-    padding-left: 0;
-    margin-left: 0;
     gap: 30px;
 
 }
@@ -120,22 +115,19 @@ nav svg {
 .secVideo {
     display: flex;
     position: absolute;
-    margin-left: 505px;
-    height: 78vh;
+    height: auto;
+    justify-content: end;
+    align-items: end;
+
+    margin-right: 58px;
+    margin-bottom: 22px;
 }
  
-
-
 .secVideo video{
-    margin-left: 60px;
-    width: 285px;
-    margin-bottom: 18px;
 
-}
-.secImg
-{
-    margin-left: 148px;
-    margin-right: 190px;
+    width: 285px;
+
+
 }
 
 .secImg img{
@@ -144,6 +136,7 @@ nav svg {
     z-index:10;
 
 }
+
 .first :first-child{
   
     font-size: 48px;
@@ -156,10 +149,9 @@ nav svg {
 }
 .first{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     background-color: black;
- 
 
 }
 
@@ -176,6 +168,7 @@ nav svg {
     
 
 }
+
 .fourth{
 
     height: 80vh;
@@ -189,13 +182,8 @@ nav svg {
 
 }
 
-.third .secImg
-{
-    margin-right: 79px 
-}
 .third .secText:nth-child(2){
     font-size: 32px;
-
 }
 
 .fifth{
@@ -269,4 +257,16 @@ h2{
 
 .grid,.sixth a{
   color: bisque;
+}
+
+@media screen and (max-width:939px){
+    .hero{
+       
+        font-size: 16px;
+    }
+
+    .first
+    {
+        font-size: 16px;
+    }
 }
